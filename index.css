@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+/* Main section */
+
+input[name="exp-month"]{
+    width: 55px;
+}
+
+input[name="exp-year"]{
+    width: 55px;
+}
+
+input[name="cvc"]{
+    width: 80px;
+}
+
+
+
+
+
+
+
+/* Footer */
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
