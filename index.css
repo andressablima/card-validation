@@ -5,8 +5,82 @@
     font-family: 'Space Grotesk', sans-serif;
     font-size: 18px;
 }
-/* Main section */
 
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* Main section */
+.bg-image img{
+   width: 100vw;
+   height: auto;
+}
+/* Image card - front */
+.card-container{
+    position: relative;
+}
+#card-front{
+    position: absolute;
+    width: 68%;
+    left: 90px;
+    top: -230px;
+}
+#card-logo{
+    position: absolute;
+    width: 10%;
+    left: 100px;
+    top: -220px;
+}
+#name-card{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    font-size: 11px;
+    left: 110px;
+    top: -130px;
+    text-transform: uppercase;
+}
+#numb-card{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    font-size: 18px;
+    left: 110px;
+    top: -160px;
+}
+#exp-card{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    font-size: 11px;
+    left: 270px;
+    top: -130px;
+}
+/* Image card - back */
+.card-cont-back{
+    position: relative;
+}
+#card-back{
+    position: absolute;
+    width: 68%;
+    left: 55px ;
+    top: -100px;
+}
+#cvc-card{
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    font-size: 11px;
+    left: 240px;
+    top: -45px;
+}
+/* Background Header */
+
+.card-img{
+
+}
+.card-back{
+    width: 100vw;
+}
+/* Form */
 input[name="exp-month"]{
     width: 55px;
 }

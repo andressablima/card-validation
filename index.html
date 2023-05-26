@@ -13,34 +13,38 @@
 
 </head>
 <body>
-  <header>
-    
-  </header>
   <main class="container">
-    <div class="bg-image">
-      <img src="./images/bg-main-mobile.png">
-    </div>
-    <div class="card-img">
-      <div class="card-comp">
-        <img class="card-front" src="./images/bg-card-front.png">
-        <img class="card-logo" src="./images/card-logo.svg">
+    <header>
+      <div>
+        <img class="bg-image" src="./images/bg-main-mobile.png">
       </div>
-      <img class="card-back" src="./images/bg-card-back.png">
+    </header>
+    <div class="card-container">
+        <img id="card-front" src="./images/bg-card-front.png">
+        <label id="name-card">Jane Austin</label>
+        <img id="card-logo" src="./images/card-logo.svg">
+        <label id="numb-card">0000 0000 0000 0000</label>
+        <label id="exp-card">00/00</label>
+    </div>    
+    <div class="card-cont-back">
+      <img id="card-back" src="./images/bg-card-back.png">
+      <label id="cvc-card">000</label>
     </div>
+
     <div class="form-content">
       <form action="" method="get">
         <label for="GET-name">Cardholder Name </label>
         <input id="GET-name" type="text" name="name" placeholder="e.g Jane Austin" required>
         <br>
         <label for="GET-numb">Card Number </label>
-        <input id="GET-numb" type="tel" name="number" maxlength="16" placeholder="0000 0000 0000 0000" required>
+        <input id="GET-numb" type="tel" name="number" maxlength="16" placeholder=" e.g. 1234 5678 9123 0000" required>
         <br>
         <label for="GET-exp">Exp. Date (MM/YY)</label>
         <input id="GET-exp" type="tel" name="exp-month" maxlength="2" placeholder="MM" required>
         <input id="GET-exp" type="tel" name="exp-year" maxlength="2" placeholder="YY" required>
         <br>
         <label for="GET-cvc">Card Number </label>
-        <input id="GET-cvc" type="tel" name="cvc" maxlength="3" placeholder="000" required>
+        <input id="GET-cvc" type="tel" name="cvc" maxlength="3" placeholder="e.g. 123" required>
         <div class="btn-conf">
           <button>CONFIRM</button>
         </div>
@@ -49,22 +53,6 @@
   </main>
 
 
-
-<!-- 
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
--->
 
   <!-- Completed state start -->
 <!--
