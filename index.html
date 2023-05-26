@@ -34,17 +34,17 @@
     <div class="form-content">
       <form action="" method="get">
         <label for="GET-name">Cardholder Name </label>
-        <input id="GET-name" type="text" name="name" placeholder="e.g Jane Austin" required>
+        <input id="GET-name" type="text" name="name" autocomplete="off" placeholder="e.g Jane Austin" required>
         <br>
         <label for="GET-numb">Card Number </label>
-        <input id="GET-numb" type="tel" name="number" maxlength="16" placeholder=" e.g. 1234 5678 9123 0000" required>
+        <input id="GET-numb" type="tel" name="number" autocomplete="off" maxlength="16" placeholder=" e.g. 1234 5678 9123 0000" required>
         <br>
         <label for="GET-exp">Exp. Date (MM/YY)</label>
-        <input id="GET-exp" type="tel" name="exp-month" maxlength="2" placeholder="MM" required>
-        <input id="GET-exp" type="tel" name="exp-year" maxlength="2" placeholder="YY" required>
+        <input id="GET-exp" type="tel" name="exp-month" autocomplete="off" maxlength="2" placeholder="MM" required>
+        <input id="GET-exp" type="tel" name="exp-year" autocomplete="off" maxlength="2" placeholder="YY" required>
         <br>
-        <label for="GET-cvc">Card Number </label>
-        <input id="GET-cvc" type="tel" name="cvc" maxlength="3" placeholder="e.g. 123" required>
+        <label for="GET-cvc">CVC </label>
+        <input id="GET-cvc" type="tel" name="cvc" autocomplete="off" maxlength="3" placeholder="e.g. 123" required>
         <div class="btn-conf">
           <button>CONFIRM</button>
         </div>

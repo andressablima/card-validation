@@ -17,9 +17,12 @@ The designs were created to the following widths:
 ### Neutral
 
 - White: hsl(0, 0%, 100%)
-- Light grayish violet: hsl(270, 3%, 87%)
-- Dark grayish violet: hsl(279, 6%, 55%)
-- Very dark violet: hsl(278, 68%, 11%)
+- Light grayish violet: 
+color: hsl(270, 3%, 87%);
+- Dark grayish violet: 
+color: hsl(279, 6%, 55%);
+- Very dark violet:
+color: hsl(278, 68%, 11%);
 
 ## Typography
 
