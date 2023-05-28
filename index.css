@@ -4,17 +4,31 @@
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
 }
-
+body{
+    max-width: 1040px;
+    height: 100%;
+}
 .container{
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
+
 /* Background Header */
-.bg-image img{
-   width: 100vw;
-   height: auto;
+header{
+    width: 40%
+}
+.backgrounds{
+    width:40% ;
+}
+.backgrounds img.bg-image{
+    display: none;
+
+}
+.backgrounds img.bg-desk{
+    display: flex;
 }
 /* Image card - front */
 .card-container{
@@ -22,38 +36,38 @@
 }
 #card-front{
     position: absolute;
-    width: 68%;
-    left: 50px;
-    top: -110px;
+    width: 45%;
+    left: 15vw;
+    top: -80vh;
 }
 #card-logo{
     position: absolute;
-    width: 10%;
-    left: 65px;
-    top: -95px;
+    width: 6%;
+    left: 17vw;
+    top: -77vh;
 }
 #name-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
-    font-size: 11px;
-    left: 65px;
-    top: -10px;
+    font-size: 15px;
+    left: 18vw;
+    top: -58vh;
     text-transform: uppercase;
 }
 #numb-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
-    font-size: 15px;
-    left: 65px;
-    top: -40px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    left: 18vw;
+    top: -64vh;
+    letter-spacing: 3px;
 }
 #exp-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
-    font-size: 11px;
-    left: 235px;
-    top: -10px;
+    font-size: 15px;
+    left: 36vw;
+    top: -58vh;
 }
 /* Image card - back */
 .card-cont-back{
@@ -61,63 +75,79 @@
 }
 #card-back{
     position: absolute;
-    width: 60%;
-    left: 100px ;
-    top: -240px;
+    width: 45%;
+    left: 20vw ;
+    top: -50vh;
 }
 #cvc-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
-    font-size: 11px;
-    left: 280px;
-    top: -185px;
+    font-size: 15px;
+    left: 45vw;
+    top: -38vh;
 }
 
 /* Form */
 form{
-    width: 80vw;
-}
-.form-content{
-    padding-top: 40px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+#form-content{
+    position: absolute;
+    width: 500px;
+    background-color: #fff;
+    padding: 25px;
+    top: 25vh;
+    left: 55vw;
+
 }
 label{
     text-transform: uppercase;
     display: block;
-    margin: 3px 0px;
-    font-size: 12px;
+    width: 100%;
+    margin: 9px 0px;
+    font-size: 18px;
     position: relative;
     color: hsl(278, 71%, 32%);
     font-weight: 500;
 }
 
 input{
-    width: 60vw;
-    height: 25px;
+    width: 26vw;
+    height: 40px;
     padding-left: 3px;
-    margin: 2px 0;
+    margin: 8px 5px;
 }
 
+input:focus, label:focus{
+    outline: none;
+}
+
+input[name="name"]{
+    margin-top: 4px ;
+
+}
 input[name="exp-month"]{
-    width: 45px;
-    height: 25px;
+    margin:5px 0;
+    width: 44px;
+    height: 30px;
+    
 }
 
 input[name="exp-year"]{
     width: 45px;
-    height: 25px;
+    height: 30px;
 }
 
 input[name="cvc"]{
+    /*margin: 3px 10px;*/
     width: 70px;
-    height: 25px;
+    height: 33px;
 }
 
-button{
-    width: 80vw;
+input[type="submit"]{
+    width: 30vw;
     height: 40px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
@@ -128,7 +158,7 @@ button{
     transition: 0.4s;
 }
 
-button:hover{
+input[type="submit"]:hover{
     background-color: hsl(278, 71%, 32%);
 }
 
@@ -172,3 +202,92 @@ footer{
     }
 }
 
+
+@media (max-width: 1025px){
+    #card-front{
+        position: absolute;
+        width: 39%;
+        left: 15vw;
+        top: -80vh;
+    }
+    #card-logo{
+        position: absolute;
+        width: 5%;
+        left: 17vw;
+        top: -77vh;
+    }
+    #name-card{
+        color: hsl(0, 0%, 100%);
+        position: absolute;
+        font-size: 15px;
+        left: 18vw;
+        top: -61vh;
+        text-transform: uppercase;
+    }
+
+    #numb-card{
+        color: hsl(0, 0%, 100%);
+        position: absolute;
+        font-size: 18px;
+        left: 18vw;
+        top: -67vh;
+        width: 40vw;
+    }
+    #exp-card{
+        color: hsl(0, 0%, 100%);
+        position: absolute;
+        font-size: 15px;
+        left: 36vw;
+        top: -61vh;
+    }
+    /* Image card - back */
+    .card-cont-back{
+        position: relative;
+    }
+    #card-back{
+        position: absolute;
+        width: 39%;
+        left: 17vw ;
+        top: -53vh;
+    }
+    #cvc-card{
+        color: hsl(0, 0%, 100%);
+        position: absolute;
+        font-size: 15px;
+        left: 47vw;
+        top: -43vh;
+    }
+    
+    /* Form */
+    form{
+        position: relative;
+    }
+    .form-content{
+        padding-top: 40px;
+        position: absolute;
+        left:60vw;
+        top: 20vh;
+    }
+    label{
+        text-transform: uppercase;
+        display: block;
+        margin: 9px 0px;
+        font-size: 18px;
+        position: relative;
+        color: hsl(278, 71%, 32%);
+        font-weight: 500;
+        width: 20vw;
+    }
+  
+    input{
+        width: 26vw;
+        height: 40px;
+        padding-left: 3px;
+        margin: 6px 0;
+    }
+    input[name="name"]{
+        margin-top: 5px;
+
+    }
+
+}

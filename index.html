@@ -15,7 +15,8 @@
 <body>
   <main class="container">
     <header>
-      <div>
+      <div class="backgrounds">
+        <img class="bg-desk" src="./images/bg-main-desktop.png">
         <img class="bg-image" src="./images/bg-main-mobile.png">
       </div>
     </header>
@@ -31,25 +32,33 @@
       <label id="cvc-card">000</label>
     </div>
 
-    <div class="form-content">
-      <form action="" method="get">
-        <label for="GET-name">Cardholder Name </label>
-        <input id="GET-name" type="text" name="name" autocomplete="off" placeholder="e.g Jane Austin" required>
-        <br>
-        <label for="GET-numb">Card Number </label>
-        <input id="GET-numb" type="tel" name="number" autocomplete="off" maxlength="16" placeholder=" e.g. 1234 5678 9123 0000" required>
-        <br>
-        <label for="GET-exp">Exp. Date (MM/YY)</label>
-        <input id="GET-exp" type="tel" name="exp-month" autocomplete="off" maxlength="2" placeholder="MM" required>
-        <input id="GET-exp" type="tel" name="exp-year" autocomplete="off" maxlength="2" placeholder="YY" required>
-        <br>
-        <label for="GET-cvc">CVC </label>
-        <input id="GET-cvc" type="tel" name="cvc" autocomplete="off" maxlength="3" placeholder="e.g. 123" required>
-        <div class="btn-conf">
-          <button>CONFIRM</button>
+
+    <div id="form-content">
+      <form id="register-form">
+        <div class="full-box spacing">
+          <label for="name">Cardholder Name </label>
+          <input id="name" type="text" name="name" placeholder="e.g Jane Austin">
+        </div>
+        <div class="full-box spacing"> 
+          <label for="numb">Card Number </label>
+          <input id="numb" type="tel" name="number"  data-min-length="16" placeholder=" e.g. 1234 5678 9123 0000">
+        </div>
+        <div class="full-box">
+          <label for="exp">Exp. Date (MM/YY)</label>
+          <input id="exp" type="tel" name="exp-month" maxlength="2" placeholder="MM">
+          <input id="exp" type="tel" name="exp-year" maxlength="2" placeholder="YY">
+        </div>
+        <div class="half-box">
+          <label for="cvc">CVC </label>
+          <input id="cvc" type="tel" name="cvc" maxlength="3" placeholder="e.g. 123">
+        </div>
+        <div class="full-box">
+         <input type="submit" id="btn-submit" value="Confirm">
         </div>
       </form>
     </div>
+    <p class="error-validation template"></p>
+    <script src="./scripts/form.js"></script>
   </main>
 
 
