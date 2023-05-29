@@ -2,12 +2,21 @@ class Validator{
 
     constructor() {
         this.validations = [
-            'data-min-length',
+            'data-max-length',
+            'data-required',
         ]
     }
 
     //iniciar validação de todos o campos
     validate(form) {
+
+        //resgata validacoes
+        let currentValidations = document.querySelectorAll('form .error-validation');
+
+        if(currentValidations.length > 0){
+            this.cleanValidations(currentValidations);
+        }
+        
         // pegar os inputs
         let inputs = form.getElementsByTagName('input');
 
@@ -34,14 +43,14 @@ class Validator{
             }
         }, this);
     }
-    //verifica se um input tem numero minimo de caracteres
-    minlength(input, minValue) {
+    //verifica se um input tem numero maximo de caracteres
+    maxlength(input, maxValue) {
 
         let inputLength = input.value.length;
 
-        let errorMessage = `O campo precisa ter  ${minValue} caracteres`;
+        let errorMessage = `Must have  ${maxValue} numbers`;
 
-        if(inputLength < minValue) {
+        if(inputLength > maxValue) {
             this.printMessage(input, errorMessage);
         }
     }
@@ -58,6 +67,22 @@ class Validator{
 
         inputParent.appendChild(template);
 
+    }
+
+    //verificação de o input está sendo requerido
+    required(input){
+        let inputValue = input.value;
+
+        if (inputValue === ''){
+            let errorMessage = `Can't be blank`;
+
+            this.printMessage(input, errorMessage);
+        }
+    }
+
+    //limpa as validacoes da tela
+    cleanValidations(validations){
+        validations.forEach(el => el.remove());
     }
 }
 

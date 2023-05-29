@@ -16,8 +16,10 @@
   <main class="container">
     <header>
       <div class="backgrounds">
-        <img class="bg-desk" src="./images/bg-main-desktop.png">
-        <img class="bg-image" src="./images/bg-main-mobile.png">
+        <img src="./images/bg-main-desktop.png">
+      </div>
+      <div class="bg-mob">
+        <img src="./images/bg-main-mobile.png">
       </div>
     </header>
     <div class="card-container">
@@ -41,16 +43,16 @@
         </div>
         <div class="full-box spacing"> 
           <label for="numb">Card Number </label>
-          <input id="numb" type="tel" name="number"  data-min-length="16" placeholder=" e.g. 1234 5678 9123 0000">
+          <input id="numb" type="tel" name="number"  data-max-length="16" placeholder=" e.g. 1234 5678 9123 0000">
         </div>
         <div class="full-box">
           <label for="exp">Exp. Date (MM/YY)</label>
-          <input id="exp" type="tel" name="exp-month" maxlength="2" placeholder="MM">
-          <input id="exp" type="tel" name="exp-year" maxlength="2" placeholder="YY">
+          <input id="exp" type="tel" name="exp-month" placeholder="MM" data-required>
+          <input id="exp" type="tel" name="exp-year" placeholder="YY" >
         </div>
         <div class="half-box">
           <label for="cvc">CVC </label>
-          <input id="cvc" type="tel" name="cvc" maxlength="3" placeholder="e.g. 123">
+          <input id="cvc" type="tel" name="cvc" placeholder="e.g. 123" data-required>
         </div>
         <div class="full-box">
          <input type="submit" id="btn-submit" value="Confirm">
@@ -68,12 +70,12 @@
   Thank you!
   We've added your card details
   Continue
--->
   <footer>
     <div class="attribution">
       Coded by <a href="https://github.com/andressablima">Andressa Lima</a> |
       LinkedIn <a href="https://www.linkedin.com/in/andressablima/">andressablima</a>
     </div>
   </footer>
+-->
 </body>
 </html>

@@ -6,6 +6,7 @@
 }
 body{
     max-width: 1040px;
+    min-width: 375px;
     height: 100%;
 }
 .container{
@@ -23,9 +24,8 @@ header{
 .backgrounds{
     width:40% ;
 }
-.backgrounds img.bg-image{
+.bg-mob{
     display: none;
-
 }
 .backgrounds img.bg-desk{
     display: flex;
@@ -100,7 +100,6 @@ form{
     padding: 25px;
     top: 25vh;
     left: 55vw;
-
 }
 label{
     text-transform: uppercase;
@@ -114,7 +113,9 @@ label{
 }
 
 input{
-    width: 26vw;
+    border:none;
+    border-bottom: 2px solid  hsl(278, 94%, 30%);
+    width: 30vw;
     height: 40px;
     padding-left: 3px;
     margin: 8px 5px;
@@ -124,15 +125,9 @@ input:focus, label:focus{
     outline: none;
 }
 
-input[name="name"]{
-    margin-top: 4px ;
-
-}
 input[name="exp-month"]{
-    margin:5px 0;
     width: 44px;
-    height: 30px;
-    
+    height: 30px; 
 }
 
 input[name="exp-year"]{
@@ -141,14 +136,13 @@ input[name="exp-year"]{
 }
 
 input[name="cvc"]{
-    /*margin: 3px 10px;*/
     width: 70px;
     height: 33px;
 }
 
 input[type="submit"]{
     width: 30vw;
-    height: 40px;
+    height: 45px;
     background-color: hsl(278, 68%, 11%);
     color: hsl(0, 0%, 100%);
     margin-top: 15px;
@@ -182,26 +176,77 @@ footer{
 
 /* Responsive screens */
 
-@media (max-width:321px){
-    #cvc-card{
-        top:-192px;
-        left: 260px;
+@media (max-width:376px){
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
+    header .backgrounds{
+      display: none;
+    }
+
+    header .bg-mob{
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+    /* Card Image*/
+    .card-container{
+        position: relative;
+        display: flex;
+    }
+
     #card-front{
-        width: 73%;
-    }
-    #card-back{
-        width: 70%;
-    }
+        display: flex;
+      position: absolute;
+      width: 40%;
+      left: 5vw;
+      top: -100vh;
 }
 
-@media (max-width: 350px){
-    #cvc-card{
-        top:-192px;
-        left: 260px;
+/* Form Container */
+    form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
     }
-}
+    #form-content{
+    width: 300px;
+    padding: 15px;
+    top: 30vh;
+    left: 5vw;
+    }
 
+    label[for="name"]{
+    width: 100%;
+    }
+
+    label[for="exp"]{
+    width: 100%;
+    }
+
+
+    input[name="name"]{
+    width: 100%;
+    }
+
+    input[name="number"]{
+    width: 100%;
+
+    }
+    input[type="submit"]{
+    width: 80vw;
+    height: 60px;
+
+    margin-top: 15px;
+    }
+
+}
 
 @media (max-width: 1025px){
     #card-front{
