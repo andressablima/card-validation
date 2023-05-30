@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
 }
+
 body{
+    overflow: hidden;
     max-width: 1040px;
     min-width: 375px;
     height: 100%;
@@ -77,14 +79,14 @@ header{
     position: absolute;
     width: 45%;
     left: 20vw ;
-    top: -50vh;
+    top: -48vh;
 }
 #cvc-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
     font-size: 15px;
     left: 45vw;
-    top: -38vh;
+    top: -35vh;
 }
 
 /* Form */
@@ -175,130 +177,35 @@ footer{
 
 
 /* Responsive screens */
-
-@media (max-width:376px){
-    .container{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    header .backgrounds{
-      display: none;
-    }
-
-    header .bg-mob{
-        display: flex;
-        width: 100%;
-        height: fit-content;
-    }
-    /* Card Image*/
-    .card-container{
-        position: relative;
-        display: flex;
-    }
-
-    #card-front{
-        display: flex;
-      position: absolute;
-      width: 40%;
-      left: 5vw;
-      top: -100vh;
-}
-
-/* Form Container */
-    form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    position: relative;
-    width: 100%;
-    }
-    #form-content{
-    width: 300px;
-    padding: 15px;
-    top: 30vh;
-    left: 5vw;
-    }
-
-    label[for="name"]{
-    width: 100%;
-    }
-
-    label[for="exp"]{
-    width: 100%;
-    }
-
-
-    input[name="name"]{
-    width: 100%;
-    }
-
-    input[name="number"]{
-    width: 100%;
-
-    }
-    input[type="submit"]{
-    width: 80vw;
-    height: 60px;
-
-    margin-top: 15px;
-    }
-
-}
-
+/* Laptop*/
 @media (max-width: 1025px){
     #card-front{
-        position: absolute;
         width: 39%;
-        left: 15vw;
-        top: -80vh;
     }
     #card-logo{
-        position: absolute;
         width: 5%;
-        left: 17vw;
-        top: -77vh;
     }
     #name-card{
-        color: hsl(0, 0%, 100%);
-        position: absolute;
-        font-size: 15px;
-        left: 18vw;
         top: -61vh;
-        text-transform: uppercase;
     }
 
     #numb-card{
-        color: hsl(0, 0%, 100%);
-        position: absolute;
         font-size: 18px;
         left: 18vw;
         top: -67vh;
         width: 40vw;
     }
     #exp-card{
-        color: hsl(0, 0%, 100%);
-        position: absolute;
-        font-size: 15px;
         left: 36vw;
         top: -61vh;
     }
     /* Image card - back */
-    .card-cont-back{
-        position: relative;
-    }
     #card-back{
-        position: absolute;
         width: 39%;
         left: 17vw ;
         top: -53vh;
     }
     #cvc-card{
-        color: hsl(0, 0%, 100%);
-        position: absolute;
-        font-size: 15px;
         left: 47vw;
         top: -43vh;
     }
@@ -307,32 +214,128 @@ footer{
     form{
         position: relative;
     }
-    .form-content{
-        padding-top: 40px;
-        position: absolute;
-        left:60vw;
-        top: 20vh;
+
+    #form-content{
+        left: 59vw;
     }
+
     label{
-        text-transform: uppercase;
-        display: block;
-        margin: 9px 0px;
-        font-size: 18px;
-        position: relative;
-        color: hsl(278, 71%, 32%);
-        font-weight: 500;
         width: 20vw;
     }
-  
     input{
         width: 26vw;
         height: 40px;
-        padding-left: 3px;
         margin: 6px 0;
     }
-    input[name="name"]{
-        margin-top: 5px;
+}
+/* Ipad Air */
+@media (max-width:821px){
+    .backgrounds img{
+        width: 100vw;
+        height: 45vh;
+    }
+    #card-front{
+        width: 45%;
+        top:-41vh
+    }
+    #card-logo{
+        width: 9%;
+        top: -40vh ;
+    }
+    #card-back{
+        width: 43%;
+        top:-22vh;
+        left: 28vw;
+    }
+    #cvc-card{
+        top: -16vh;
+        left: 61vw;
+    }
+    #name-card{
+        top: -28vh;
+    }
+    #numb-card{
+        font-size: 19px;
+        top: -32vh;
+    }
+    #exp-card{
+        left: 46vw;
+        top: -28vh;
+        font-size: 14px;
+    }
+    #form-content{
+        width: 500px;
+        top: 50vh;
+        left: 16vw;
+    }
+    label{
+        width: 40vw;
+        font-size: 20px;
+    }
+    input{
+        width: 48vw;
+        font-size: 15px;
+    }
+    input[type="submit"]{
+        width: 48vw;
+        height: 50px;
+    }
 
+}
+/* Galaxy S8+ */
+@media (max-width:361px){
+    .backgrounds img{
+        width: 127vw;
+        height: 50vh;
+    }
+    #card-front{
+        width: 70%;
+        top:-43vh
+    }
+    #card-logo{
+        width: 9%;
+        top: -42vh;
+    }
+    #name-card{
+        top: -28vh;
+        font-size: 12px;
+    }
+    #numb-card{
+        width: 60vw;
+        font-size: 14px;
+        top: -33vh;
+    }
+    #exp-card{
+        left: 70vw;
+        top: -28vh;
+        font-size: 12px;
+    }
+    #card-back{
+        width: 70%;
+        top:-20vh;
+        left: 28vw;
+    }
+    #cvc-card{
+        top: -13vh;
+        left: 76vw;
+        font-size: 12px;
+    }
+    #form-content{
+        width: 360px;
+        top: 55vh;
+        left: 8vw;
+    }
+    label{
+        width: 55vw;
+        font-size: 20px;
+    }
+    input{
+        width: 80vw;
+        font-size: 15px;
+    }
+    input[type="submit"]{
+        width: 80vw;
+        height: 50px;
     }
 
 }

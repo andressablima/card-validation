@@ -4,6 +4,7 @@ class Validator{
         this.validations = [
             'data-max-length',
             'data-required',
+            'data-only-numbers'
         ]
     }
 
@@ -51,6 +52,19 @@ class Validator{
         let errorMessage = `Must have  ${maxValue} numbers`;
 
         if(inputLength > maxValue) {
+            this.printMessage(input, errorMessage);
+        }
+    }
+
+    //valida se o campo tem só letras
+    onlynumbers(input){
+        let re = /^[0-9]+$/;
+
+        let inputValue = input.value;
+
+        let errorMessage = `Numbers only`;
+
+        if(!re.test(inputValue)) {
             this.printMessage(input, errorMessage);
         }
     }

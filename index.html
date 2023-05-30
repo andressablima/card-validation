@@ -16,7 +16,7 @@
   <main class="container">
     <header>
       <div class="backgrounds">
-        <img src="./images/bg-main-desktop.png">
+        <img class="desk" src="./images/bg-main-desktop.png">
       </div>
       <div class="bg-mob">
         <img src="./images/bg-main-mobile.png">
@@ -34,7 +34,6 @@
       <label id="cvc-card">000</label>
     </div>
 
-
     <div id="form-content">
       <form id="register-form">
         <div class="full-box spacing">
@@ -43,7 +42,7 @@
         </div>
         <div class="full-box spacing"> 
           <label for="numb">Card Number </label>
-          <input id="numb" type="tel" name="number"  data-max-length="16" placeholder=" e.g. 1234 5678 9123 0000">
+          <input id="numb" type="tel" name="number"  data-max-length="16" placeholder=" e.g. 1234 5678 9123 0000" data-only-numbers>
         </div>
         <div class="full-box">
           <label for="exp">Exp. Date (MM/YY)</label>
