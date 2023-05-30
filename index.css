@@ -18,7 +18,6 @@ body{
     flex-direction: column;
     position: relative;
 }
-
 /* Background Header */
 header{
     width: 40%
@@ -38,38 +37,38 @@ header{
 }
 #card-front{
     position: absolute;
-    width: 45%;
+    width: 35%;
     left: 15vw;
-    top: -80vh;
+    top: -140vh;
 }
 #card-logo{
     position: absolute;
     width: 6%;
     left: 17vw;
-    top: -77vh;
+    top: -138vh;
 }
 #name-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
     font-size: 15px;
-    left: 18vw;
-    top: -58vh;
+    left: 16vw;
+    top: -113vh;
     text-transform: uppercase;
 }
 #numb-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
     font-size: 20px;
-    left: 18vw;
-    top: -64vh;
+    left: 16vw;
+    top: -122vh;
     letter-spacing: 3px;
 }
 #exp-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
     font-size: 15px;
-    left: 36vw;
-    top: -58vh;
+    left: 34vw;
+    top: -113vh;
 }
 /* Image card - back */
 .card-cont-back{
@@ -77,16 +76,16 @@ header{
 }
 #card-back{
     position: absolute;
-    width: 45%;
-    left: 20vw ;
-    top: -48vh;
+    width: 35%;
+    left: 17vw ;
+    top: -99vh;
 }
 #cvc-card{
     color: hsl(0, 0%, 100%);
     position: absolute;
     font-size: 15px;
-    left: 45vw;
-    top: -35vh;
+    left: 38vw;
+    top: -85vh;
 }
 
 /* Form */
@@ -100,14 +99,14 @@ form{
     width: 500px;
     background-color: #fff;
     padding: 25px;
-    top: 25vh;
+    top: 20vh;
     left: 55vw;
 }
 label{
     text-transform: uppercase;
     display: block;
     width: 100%;
-    margin: 9px 0px;
+    margin: 9px 10px;
     font-size: 18px;
     position: relative;
     color: hsl(278, 71%, 32%);
@@ -120,7 +119,7 @@ input{
     width: 30vw;
     height: 40px;
     padding-left: 3px;
-    margin: 8px 5px;
+    margin: 8px 9px;
 }
 
 input:focus, label:focus{
@@ -158,138 +157,107 @@ input[type="submit"]:hover{
     background-color: hsl(278, 71%, 32%);
 }
 
-/* Footer */
-footer{
-    padding-top: 20px;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.attribution { 
-    font-size: 10px; 
-    text-align: center; 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-}
 
 
 /* Responsive screens */
-/* Laptop*/
-@media (max-width: 1025px){
+/*Desktop 1440x900 */
+@media (min-width:1439px){
     #card-front{
-        width: 39%;
-    }
+        width: 35%;
+        left: 15vw;
+        top: -90vh;
+    } 
     #card-logo{
-        width: 5%;
+        top: -88vh;
     }
     #name-card{
-        top: -61vh;
-    }
-
-    #numb-card{
-        font-size: 18px;
-        left: 18vw;
-        top: -67vh;
-        width: 40vw;
-    }
-    #exp-card{
-        left: 36vw;
-        top: -61vh;
-    }
-    /* Image card - back */
-    #card-back{
-        width: 39%;
-        left: 17vw ;
-        top: -53vh;
-    }
-    #cvc-card{
-        left: 47vw;
-        top: -43vh;
-    }
-    
-    /* Form */
-    form{
-        position: relative;
-    }
-
-    #form-content{
-        left: 59vw;
-    }
-
-    label{
-        width: 20vw;
-    }
-    input{
-        width: 26vw;
-        height: 40px;
-        margin: 6px 0;
-    }
-}
-/* Ipad Air */
-@media (max-width:821px){
-    .backgrounds img{
-        width: 100vw;
-        height: 45vh;
-    }
-    #card-front{
-        width: 45%;
-        top:-41vh
-    }
-    #card-logo{
-        width: 9%;
-        top: -40vh ;
-    }
-    #card-back{
-        width: 43%;
-        top:-22vh;
-        left: 28vw;
-    }
-    #cvc-card{
-        top: -16vh;
-        left: 61vw;
-    }
-    #name-card{
-        top: -28vh;
+        top: -73vh;
     }
     #numb-card{
-        font-size: 19px;
-        top: -32vh;
+        top: -78vh;
     }
     #exp-card{
-        left: 46vw;
-        top: -28vh;
-        font-size: 14px;
+        left: 33vw;
+        top: -73vh;
+    }
+    #card-back{
+        left: 19vw;
+        top: -65vh;
+    }
+    #cvc-card{
+        left: 38vw;
+        top: -56vh;
     }
     #form-content{
         width: 500px;
-        top: 50vh;
-        left: 16vw;
+        top: 18vh;
+        left: 45vw;
     }
     label{
-        width: 40vw;
-        font-size: 20px;
+        width: 100%;
+        margin: 9px 10px;
+        font-size: 18px;
     }
     input{
-        width: 48vw;
-        font-size: 15px;
+        margin: 8px 9px;
     }
-    input[type="submit"]{
-        width: 48vw;
-        height: 50px;
-    }
+} 
 
-}
+/* Laptop */
+@media (max-width: 1025px){
+    #card-front{
+        width: 35%;
+        top: -100vh;
+    }
+    #card-logo{
+        width: 6%;
+        top: -98vh;
+    }
+    #name-card{
+        top: -80vh;
+        left: 17vw;
+    }
+    #numb-card{
+        font-size: 19px;
+        left: 17vw;
+        top: -86vh;
+        width: 45vw;
+    }
+    #exp-card{
+        left: 38vw;
+        top: -80vh;
+    }
+    #card-back{
+        width: 35%;
+        left: 17vw ;
+        top: -65vh;
+    }
+    #cvc-card{
+        left: 45vw;
+        top: -55vh;
+    }
+    #form-content{
+        left: 59vw;
+    }
+    label{
+        width: 20vw;
+        margin: 9px 4px;
+    }
+    input{
+        width: 30vw;
+        height: 40px;
+        margin: 6px 0;
+    }
+} 
+
 /* Galaxy S8+ */
 @media (max-width:361px){
     .backgrounds img{
-        width: 127vw;
+        width: 136vw;
         height: 50vh;
     }
     #card-front{
-        width: 70%;
+        width: 75%;
         top:-43vh
     }
     #card-logo{
@@ -298,27 +266,28 @@ footer{
     }
     #name-card{
         top: -28vh;
-        font-size: 12px;
+        font-size: 14px;
     }
     #numb-card{
         width: 60vw;
         font-size: 14px;
+        left: 18vw;
         top: -33vh;
     }
     #exp-card{
         left: 70vw;
         top: -28vh;
-        font-size: 12px;
+        font-size: 14px;
     }
     #card-back{
-        width: 70%;
+        width: 75%;
         top:-20vh;
         left: 28vw;
     }
     #cvc-card{
-        top: -13vh;
-        left: 76vw;
-        font-size: 12px;
+        top: -12vh;
+        left: 84vw;
+        font-size: 14px;
     }
     #form-content{
         width: 360px;
@@ -337,5 +306,4 @@ footer{
         width: 80vw;
         height: 50px;
     }
-
-}
+} 
