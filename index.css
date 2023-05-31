@@ -308,37 +308,37 @@ input[type="submit"]:hover{
     }
 } 
 
-@media (max-width:376px){
+@media (min-width:375px) and (max-width:415px){
     .backgrounds img{
         width: 136vw;
         height: 45vh;
     }
     #card-front{
         width: 70%;
-        top:-41vh
+        top:-39vh
     }
     #card-logo{
-        width: 8%;
-        top: -39vh;
+        width: 9%;
+        top: -37vh;
     }
     #name-card{
-        top: -25vh;
+        top: -26vh;
         font-size: 12px;
     }
     #numb-card{
         width: 60vw;
-        font-size: 14px;
+        font-size: 16px;
         left: 18vw;
         top: -31vh;
     }
     #exp-card{
         left: 65vw;
-        top: -25vh;
+        top: -26vh;
         font-size: 12px;
     }
     #card-back{
         width: 70%;
-        top:-17vh;
+        top:-15vh;
         left: 25vw;
     }
     #cvc-card{
