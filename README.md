@@ -12,7 +12,7 @@ Essa é uma solução ao desafio do FrontendMentor.
   - [The challenge](#the-challenge)
 - [My process](#my-process)
   - [Built with](#built-with)
-- Useful Resources (#useful-resources)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
