@@ -41,7 +41,7 @@ Eu comecei usando o HTML, estruturando todas as partes, encaixando as divs, imag
 - CSS Grid
 - JavaScript 
 
-## Useful resources
+### Useful resources
 - [Introdução ao DOM] (https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction) - This helped me understand DOM form object | Introdução ao DOM
 - [Form ] (https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/form) - This helped learn and understand forms | Esse site me fez aprender e entender formulários.
 
